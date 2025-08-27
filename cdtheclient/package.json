@@ -7,7 +7,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon app"
+    "dev": "nodemon app",
+    "homepage": "https://jemila2.github.io/thesl"
   },
   "author": "",
   "license": "ISC",
