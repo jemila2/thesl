@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
+  base: '/thesl/,
   plugins: [
     react(),
     tailwindcss(), // Tailwind v4 uses Vite plugin instead of PostCSS
