@@ -3,10 +3,10 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  base: '/thesl/',
+  base: '/thesl/',  // Added slashes - this is critical for GitHub Pages
   plugins: [
     react(),
-    tailwindcss(), // Tailwind v4 uses Vite plugin instead of PostCSS
+    tailwindcss(),
   ],
   server: {
     host: '0.0.0.0',
