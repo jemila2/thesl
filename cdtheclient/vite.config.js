@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  base: '/thesl/',  // Added slashes - this is critical for GitHub Pages
+  base: '/thesl/', 
   plugins: [
     react(),
     tailwindcss(),
