@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  base: '/thesl/', 
+  base: '/',  // Changed from 'thesl' to '/' for Vercel
   plugins: [
     react(),
     tailwindcss(),
