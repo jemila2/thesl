@@ -20,15 +20,26 @@ export function AuthProvider({ children }) {
   
   // const navigate = useNavigate();
 
+  // const api = axios.create({
+  //   baseURL: import.meta.env.VITE_API_BASE_URL || 'http://localhost:3001/api',
+  //   timeout: 10000,
+  //   headers: {
+  //     'Content-Type': 'application/json',
+  //     'Accept': 'application/json'
+  //   },
+  //   withCredentials: true
+  // });
+
+
   const api = axios.create({
-    baseURL: import.meta.env.VITE_API_BASE_URL || 'http://localhost:3001/api',
-    timeout: 10000,
-    headers: {
-      'Content-Type': 'application/json',
-      'Accept': 'application/json'
-    },
-    withCredentials: true
-  });
+  baseURL: 'https://backend-21-2fu1.onrender.com/api',
+  timeout: 10000,
+  headers: {
+    'Content-Type': 'application/json',
+    'Accept': 'application/json'
+  },
+     withCredentials: true
+});
 
   // Enhanced interceptors
   api.interceptors.request.use((config) => {
@@ -509,4 +520,5 @@ export const useAuth = () => {
     throw new Error('useAuth must be used within an AuthProvider');
   }
   return context;
+
 };
