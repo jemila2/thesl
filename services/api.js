@@ -1,8 +1,18 @@
 
-export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3001';
+// export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3001';
 import axios from 'axios';
+// const api = axios.create({
+//   baseURL: import.meta.env.VITE_API_BASE_URL || 'http://localhost:3001/api',
+//   timeout: 10000,
+//   headers: {
+//     'Content-Type': 'application/json',
+//     'Accept': 'application/json'
+//   }
+// });
+
+
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || 'http://localhost:3001/api',
+  baseURL: 'https://backend-21-2fu1.onrender.com/api',
   timeout: 10000,
   headers: {
     'Content-Type': 'application/json',
@@ -862,6 +872,7 @@ export const userApi = {
   },
  
 };
+
 
 
 
